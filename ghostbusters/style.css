@@ -1,0 +1,88 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 104px;
+    border-bottom: 1px solid #D4D4D4;
+}
+
+.header__logo {
+    padding-left: 34px;
+}
+
+.header__search {
+    display: flex;
+    justify-content: left;
+    padding-left: 34px;
+
+}
+.search-input {
+    display: flex;
+    background-image: url(/ghostbusters/img/search-icon.svg);
+    background-repeat: no-repeat;
+    background-position: center left;
+    border: none;
+    padding-left: 38px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #A5A5A5;
+}
+
+.header__nav {
+    padding-right: 34px;
+    display: flex;
+    justify-content: right;
+}
+.nav__link {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #363636;
+    margin-right: 18px;
+}
+
+.header__signup,
+.header__signin {
+    display: flex;
+    height: 100%;
+}
+
+.signup__button {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #5671F6;
+    border: none;
+    background-color: #fff;
+    height: 100%;
+    padding-left: 34px;
+    padding-right: 34px;
+    cursor: pointer;
+}
+
+.signin__button {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #fff;
+    border: none;
+    background-color: #5671F6;
+    height: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+    cursor: pointer;
+}

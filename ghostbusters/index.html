@@ -5,31 +5,150 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="/ghostbusters/normalize.css">
-    <link rel="stylesheet" href="/ghostbusters/style.css">
+    <!--<link rel="stylesheet" href="normalize.css">-->
+    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;0,900;1,300&display=swap">
     <title>Промо-сайт к фильму "Охотники за привидениями"</title>
 </head>
 <body>
-  <header class="header">
-      <div class="header__logo">
-          <img src="/ghostbusters/img/film.png" alt="logo">
-      </div>
-      <div class="header__search">
+    <header class="header">
+        <div class="header__logo">
+          <img src="img/film.png" alt="logo">
+        </div>
+        <div class="header__search">
           <input class="search-input" placeholder="Поиск по фильмам">
-      </div>
-      <div class="header__nav">
+        </div>
+        <div class="header__nav">
           <a href="#" class="nav__link">фильмы</a>
           <a href="#" class="nav__link">тв</a>
           <a href="#" class="nav__link">новости</a>
           <a href="#" class="nav__link">о сервисе</a>
-      </div>
-      <div class="header__signup">
-          <button class="signup__button">регистрация</button>
-      </div>
-      <div class="header__signin">
-          <button class="signin__button">войти</button>
-      </div>
-  </header>
+        </div>
+        <div class="header__signup">
+        <button class="signup__button">регистрация</button>
+        </div>
+        <div class="header__signin">
+            <button class="signin__button">войти</button>
+        </div>
+    </header>
+    <section class="main">
+        <div class="main__poster">
+            <div class="main__poster-picture">
+                <img src="img/poster.png" alt="Poster" class="main__poster-picture_image">
+                <button class="main__poster-button">
+                    <img class="poster-button__icon" src="img/play-icon.svg">
+                    <p class="poster-button__text">Просмотреть трейлер</p>
+                </button>
+            </div>
+        </div>
+        <div class="main__content">
+            <h1 class="main__content-title">Охотники за привидениями: <br>Наследники</h1>
+            <p class="main__content-subtitle">Ghostbusters: Afterlife</p>
+            <p class="main__content-description">Мать-одиночка с&nbsp;двумя детьми-подростками селится на&nbsp;старой ферме в&nbsp;Оклахоме, полученной в&nbsp;наследство от&nbsp;отца, которого она не&nbsp;знала. Дети пытаются больше узнать о&nbsp;своем деде и&nbsp;находят автомобиль Ecto-1, принадлежавший знаменитым охотникам за&nbsp;привидениями.</p>
+            <div class="main__content-features">
+                <div class="features__column>">
+                    <span class="column__item">
+                        <strong class="item__title">Режиссер</strong>
+                        <span class="item__subtitle">Джейсон Райтман</span>
+                    </span>
+                    <span class="column__item">
+                        <strong class="item__title">Сценарий</strong>
+                        <span class="item__subtitle">Дэн Эйкройд</span>
+                    </span>
+                    <span class="column__item">
+                        <strong class="item__title">Премьера</strong>
+                        <span class="item__subtitle">09.07.2020 (РФ)</span>
+                    </span>
+                </div>
+                <div class="features__column>">
+                    <span class="column__item">
+                        <strong class="item__title">Бюджет</strong>
+                        <span class="item__subtitle">1 000 000 $</span>
+                    </span>
+                    <span class="column__item">
+                        <strong class="item__title">Кинопрокат</strong>
+                        <span class="item__subtitle">SPPR</span>
+                    </span>
+                    <span class="column__item">
+                        <strong class="item__title">Премьера</strong>
+                        <span class="item__subtitle">09.07.2020 (РФ)</span>
+                    </span>
+                </div>
+            </div>
+            <div class="main__content-raiting">
+                <div class="raiting-counter">92%
+                </div>
+                <div class="raiting-description">
+                    <h3 class="raiting-customer">Рейтинг зрителей</h3>
+                    <span class="raiting-customer__description">Средняя оценка: <strong>4,5/5</strong></span>
+                    <span class="raiting-customer__description">Всего голосов: <strong>4 350</strong></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="cast">
+        <div class="cast__tabs">
+            <h2 class="cast__actors_active">Актёры</h2>
+            <h2 class="cast__actors">Создатели</h2>
+        </div>
+        <div class="cast__content">
+            <div class="cast__content-item">
+                <img src="img/actors/1.png" alt="photo" class="item__photo">
+                <div class="item__description">
+                    <h3 class="item__name">Кэрри Кун</h3>
+                    <span class="item__en-name">Carrie Coon</span>
+                </div>
+            </div>
+            <div class="cast__content-item">
+                <img src="img/actors/2.png" alt="photo" class="item__photo">
+                <div class="item__description">
+                    <h3 class="item__name">Билл Мюррей</h3>
+                    <span class="item__en-name">Bill Murray</span>
+                </div>
+            </div>
+            <div class="cast__content-item">
+                <img src="img/actors/3.png" alt="photo" class="item__photo">
+                <div class="item__description">
+                    <h3 class="item__name">Пол Радд</h3>
+                    <span class="item__en-name">Paul Rudd</span>
+                </div>
+            </div>
+            <div class="cast__content-item">
+                <img src="img/actors/4.png" alt="photo" class="item__photo">
+                <div class="item__description">
+                    <h3 class="item__name">Энни Поттс</h3>
+                    <span class="item__en-name">Annie Potts</span>
+                </div>
+            </div>
+            <div class="cast__content-item">
+                <img src="img/actors/5.png" alt="photo" class="item__photo">
+                <div class="item__description">
+                    <h3 class="item__name">МакКенна Грейс</h3>
+                    <span class="item__en-name">Mckenna Grace</span>
+                </div>
+            </div>
+            <div class="cast__content-item">
+                <img src="img/actors/6.png" alt="photo" class="item__photo">
+                <div class="item__description">
+                    <h3 class="item__name">Дэн Эйкройд</h3>
+                    <span class="item__en-name">Dan Aykroyd</span>
+                </div>
+            </div>
+            <div class="cast__content-item">
+                <img src="img/actors/7.png" alt="photo" class="item__photo">
+                <div class="item__description">
+                    <h3 class="item__name">Эрни Хадсон</h3>
+                    <span class="item__en-name">Ernie Hudson</span>
+                </div>
+            </div>
+            <div class="cast__content-item">
+                <img src="img/actors/8.png" alt="photo" class="item__photo">
+                <div class="item__description">
+                    <h3 class="item__name">Финн Вулфард</h3>
+                    <span class="item__en-name">Finn Wolfhard</span>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>

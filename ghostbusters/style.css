@@ -11,25 +11,26 @@ body {
 }
 
 .header {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 3fr 1fr 1fr;
     align-items: center;
-    justify-content: space-between;
     height: 104px;
     border-bottom: 1px solid #D4D4D4;
 }
 
 .header__logo {
-    padding-left: 34px;
+    display: flex;
+    justify-content: center;
 }
 
 .header__search {
     display: flex;
-    justify-content: left;
-    padding-left: 34px;
-
+    justify-content: center;
 }
+
 .search-input {
     display: flex;
+    justify-content: center;
     background-image: url(/ghostbusters/img/search-icon.svg);
     background-repeat: no-repeat;
     background-position: center left;
@@ -43,9 +44,8 @@ body {
 }
 
 .header__nav {
-    padding-right: 34px;
     display: flex;
-    justify-content: right;
+    justify-content: center;
 }
 .nav__link {
     text-decoration: none;
@@ -55,13 +55,20 @@ body {
     font-size: 18px;
     line-height: 21px;
     color: #363636;
-    margin-right: 18px;
+    margin-right: 24px;
 }
 
-.header__signup,
+.header__signup {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
 .header__signin {
     display: flex;
+    justify-content: center;
     height: 100%;
+    background-color: #5671F6;
 }
 
 .signup__button {
@@ -74,8 +81,6 @@ body {
     border: none;
     background-color: #fff;
     height: 100%;
-    padding-left: 34px;
-    padding-right: 34px;
     cursor: pointer;
 }
 
@@ -89,9 +94,11 @@ body {
     border: none;
     background-color: #5671F6;
     height: 100%;
-    padding-left: 50px;
-    padding-right: 50px;
     cursor: pointer;
+}
+
+.header__nav-burger {
+    display: none;
 }
 
 .main {
@@ -108,7 +115,8 @@ body {
     display: flex;
     justify-content: center;
     margin-right: 60px;
-    width: 25%;
+    max-width: 30%;
+    min-width: 358px;
 }
 
 .main__poster-picture {
@@ -121,13 +129,12 @@ body {
 
 .main__poster-button {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     width: 100%;
     background-color: transparent;
     padding-bottom: 25px;
     padding-top: 25px;
-    padding-left: 81px;
     border: 1px solid #D4D4D4;
     box-sizing: border-box;
     border-radius: 0px 0px 5px 5px;
@@ -146,7 +153,7 @@ body {
 }
 
 .main__content {
-    width: 45%;
+    width: 70%;
 }
 
 .main__content-title {
@@ -178,7 +185,6 @@ body {
 
 .main__content-features {
     display: flex;
-    /*justify-content: flex-start;*/
     align-items: center;
     padding-bottom: 50px;
 }
@@ -204,7 +210,7 @@ body {
 }
 
 .main__content-raiting {
-    width: 55%;
+    width: 70%;
     display: flex;
 }
 
@@ -290,7 +296,7 @@ body {
 }
 
 .item__photo {
-    margin-right: 50px;
+    margin-right: 20px;
 }
 
 .item__description {
@@ -313,4 +319,61 @@ body {
     font-size: 16px;
     line-height: 19px;
     color: #A5A5A5;
+}
+
+.news {
+    background-color: #F3F3F3;
+    padding-bottom: 100px;
+}
+
+.news__container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.news__title {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+    padding-top: 70px;
+    padding-bottom: 65px;
+}
+
+.news__content {
+    display: flex;
+    justify-content: space-between;
+    height: 60%;
+}
+
+.news__content-item {
+    flex-basis: 23%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 52px;
+    border-radius: 5px;
+}
+
+.item__date {
+    width: 75%;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+    padding-bottom: 14px;
+}
+
+.item__description {
+    width: 75%;
+    min-height: 48px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
 }

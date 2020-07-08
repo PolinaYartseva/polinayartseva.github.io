@@ -7,24 +7,38 @@ let getUsername = (url) => {
         userName = 'github';
     }
     return userName;
-}
+};
 
 let name = getUsername(url);
 
-let promise = fetch('https://api.github.com/users/' + name)
-    .then(res => res.json())
-    .then(json => {
-        let avatar = json.avatar_url;
-        let name = json.login;
-        let bio = json.bio;
-        let profile = json.html_url;
+let getNowDate = new Promise((resolve, reject) => {
+    let nowDate = new Date();
+    setTimeout(() => nowDate ?
+        resolve(nowDate) :
+        reject ('Ошибка вычисления времени'), 2000)
+});
+
+let getUserData = fetch('https://api.github.com/users/' + name);
+
+Promise.all([getUserData, getNowDate])
+    .then(([ourUserData, ourNowDate]) => {
+        userData = ourUserData;
+        currentDate = ourNowDate;
+    })
+    .then(() => userData.json())
+    .then(userInfo => {
+        let avatar = userInfo.avatar_url;
+        let name = userInfo.login;
+        let bio = userInfo.bio;
+        let profile = userInfo.html_url;
         if (name) {
 
             let createAvatar = () => {
                 let newAvatar = document.createElement('img');
                 newAvatar.src = avatar;
                 let addString = document.createElement('br');
-                document.body.appendChild(newAvatar, addString);
+                document.body.appendChild(newAvatar);
+                document.body.appendChild(addString);
             };
 
             let createBio = () => {
@@ -42,9 +56,19 @@ let promise = fetch('https://api.github.com/users/' + name)
                 elementLink.appendChild(elementTitle);
             };
 
+            let createDate = () => {
+                let newCurrentDate = document.createElement('p');
+                newCurrentDate.innerHTML = currentDate;
+                document.body.appendChild(newCurrentDate);
+            };
+
+            let elementForPreloader = document.getElementById('preloader');
+            elementForPreloader.classList.add('hidden');
+
             createProfile();
             createBio();
             createAvatar();
+            createDate();
 
         } else {
             let errorMessage = () => {
@@ -52,6 +76,9 @@ let promise = fetch('https://api.github.com/users/' + name)
                 elementForError.innerHTML = 'Упс... Информация о пользователе не найдена';
                 document.body.appendChild(elementForError);
             };
+
+            let elementForPreloader = document.getElementById('preloader');
+            elementForPreloader.classList.add('hidden');
 
             errorMessage();
         }

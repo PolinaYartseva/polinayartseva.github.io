@@ -5,8 +5,10 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="/ghostbusters/style.css">
-    <link rel="stylesheet" href="/ghostbusters/media.css">
+    <link rel="stylesheet" href="/ghostbusters/css/style.css">
+    <link rel="stylesheet" href="/ghostbusters/css/media.css">
+    <link rel="stylesheet" href="/ghostbusters/css/jquery.fancybox.min.css">
+<!--    <link rel="stylesheet" href="/ghostbusters/script.js">-->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;0,900;1,300&display=swap">
     <title>Промо-сайт к фильму "Охотники за привидениями"</title>
 </head>
@@ -38,10 +40,10 @@
         <div class="main__poster">
             <div class="main__poster-picture">
                 <img src="img/poster.png" alt="Poster" class="main__poster-picture_image">
-                <button class="main__poster-button">
+                <a data-fancybox href="https://https://www.youtube.com/watch?v=o705uydkgew" class="main__poster-button">
                     <img class="poster-button__icon" src="img/play-icon.svg">
                     <p class="poster-button__text">Просмотреть трейлер</p>
-                </button>
+                </a>
             </div>
         </div>
         <div class="main__content">
@@ -176,5 +178,7 @@
             </div>
         </div>
     </section>
+<script src="/js/jquery-3.5.1.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
 </body>
 </html>

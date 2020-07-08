@@ -138,6 +138,7 @@ body {
     border: 1px solid #D4D4D4;
     box-sizing: border-box;
     border-radius: 0px 0px 5px 5px;
+    text-decoration: none;
 }
 
 .poster-button__icon {

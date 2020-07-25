@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background: url(./img/Background.png) no-repeat;
+    background-size: cover;
+    font-family: Oswald, serif;
+    position: relative;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+.main {
+    display: flex;
+}
+
+.main__description {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+}
+
+.description__title {
+    padding-top: 129px;
+    padding-left: 103px;
+    color: #fff;
+    font-size: 57px;
+    line-height: 67px;
+}
+
+.description__subtitle {
+    padding-top: 8px;
+    padding-left: 103px;
+    font-size: 19px;
+    line-height: 22px;
+    color: #fff;
+}
+
+.main__levels {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    padding-left: 103px;
+    padding-top: 60px;
+}
+
+.level {
+    border: none;
+    width: 50%;
+    position: relative;
+}
+
+.level-input {
+    background: none;
+    border: none;
+    font-size: 50px;
+    line-height: 59px;
+    color: #fff;
+    padding-bottom: 24px;
+    padding-left: 30px;
+    font-family: Oswald, serif;
+    outline: none;
+}
+
+.level-input:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.level:visited::before,
+.level:hover::before,
+.level:active::before,
+.level_active:before{
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-bottom: 4px;
+    transform: rotate(45deg);
+    background-color: #d62b2e;
+    position: absolute;
+    top: 30%;
+}
+
+.start-button {
+    font-family: Oswald, serif;
+    border-style: none;
+    border-radius: 7px;
+    width: 352px;
+    height: 95px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 37px;
+    background-color: #d62b2e;
+    outline: none;
+}
+
+.start-button:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.main__image {
+    display: block;
+    width: 35%;
+}
+
+.main__image1 {
+    position: absolute;
+    padding-top: 20%;
+}
+
+.main__image2 {
+    position: absolute;
+    padding-top: 20%;
+    padding-left: 7%;
+}
+
+.card-wrapper {
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+    height: 341px;
+    width: 218px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.8s;
+}
+
+.card-wrapper_hover:hover {
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+    transform: rotate(-3.08deg) translateY(-15px);
+    transition: 0.4s ease;
+}
+
+.card-back {
+    background: url(./img/card_back.png) no-repeat;
+    backface-visibility: hidden;
+    height: 341px;
+    width: 218px;
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+}
+
+.card-gameover {
+    background: url(./img/card_gameover.png) no-repeat;
+    backface-visibility: hidden;
+    height: 341px;
+    width: 218px;
+    position:absolute;
+    transform: rotateY(180deg);
+    -webkit-backface-visibility: hidden;
+}
+
+.card-bug {
+    background: url(./img/card_bug.png) no-repeat;
+    backface-visibility: hidden;
+    height: 341px;
+    width: 218px;
+    position:absolute;
+    transform: rotateY(180deg);
+    -webkit-backface-visibility: hidden;
+}
+
+.card-click {
+    transform: rotateY(180deg);
+}
+
+.three-card-game {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 702px;
+    height: 706px;
+    margin: auto;
+    perspective: 1000px;
+}
+
+.six-card-game {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-around;
+    flex-wrap: wrap;
+    width: 702px;
+    height: 750px;
+    margin: auto;
+    perspective: 1000px;
+}
+
+.ten-card-game {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*align-content: space-around;*/
+    flex-wrap: wrap;
+    height: 702px;
+    width: 1186px;
+    margin: auto;
+    perspective: 1000px;
+}

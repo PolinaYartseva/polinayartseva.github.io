@@ -1,1 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name = 'viewport' content = 'initial-scale=1.0, width=device-width'>
+    <link type="text/css" rel="stylesheet" href="./style.css">
+    <link type="text/css" rel="stylesheet" href="./media.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <title>Игра "Найди баг"</title>
+</head>
+<body class="container" id="container">
+<!--<header class="header" id="header-block">-->
 
+</header>
+<section class="main" id="levels-menu">
+    <div class="main__description">
+        <h1 class="description__title">
+            Выберите уровень сложности:
+        </h1>
+        <p class="description__subtitle">
+            Выберите сложность и игра начнется. Чем выше уровень - тем больше будет выборка карт.
+        </p>
+
+    <div class="main__levels" id="levels">
+        <label class="level" for="simple" id="label-simple">
+            <input class="level-input simple" type="button" name="simple" value="Простой" id="simple">
+        </label>
+        <label class="level" for="average" id="label-average">
+            <input class="level-input average" type="button" name="average" value="Средний" id="average">
+        </label>
+        <label class="level" for="difficult" id="label-difficult">
+            <input class="level-input difficult" type="button" name="difficult" value="Сложный" id="difficult">
+        </label>
+        <input class="start-button" type="button" name="start" value="Начать игру" id="button">
+    </div>
+    </div>
+    <div class="main__image">
+        <img src="./img/main__image_1.png" alt="карта" class="main__image1">
+        <img src="./img/main__image_2.png" alt="карта" class="main__image2">
+    </div>
+</section>
+<script type="text/javascript" src="./script.js"></script>
+</body>
+</html>

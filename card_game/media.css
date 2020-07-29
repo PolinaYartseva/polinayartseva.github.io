@@ -108,6 +108,17 @@
         top: 25%;
         left: 27%;
     }
+    .card-wrapper {
+        height: 227px;
+        width: 145px;
+    }
+    .card-bug,
+    .card-back,
+    .card-gameover {
+        background-size: contain;
+        height: 227px;
+        width: 145px;
+    }
 }
 
 @media (max-width: 880px) {
@@ -157,6 +168,22 @@
         height: 12px;
         left: 18%;
     }
+    .card-wrapper {
+        height: 170px;
+        width: 109px;
+    }
+    .card-bug,
+    .card-back,
+    .card-gameover {
+        background-size: contain;
+        height: 170px;
+        width: 109px;
+    }
+    .six-card-game,
+    .ten-card-game {
+        padding-top: 25%;
+        padding-bottom: 25%;
+    }
 }
 
 @media (max-width: 600px) {
@@ -174,6 +201,22 @@
     .level:active::before,
     .level_active:before {
         left: 10%;
+    }
+    .card-wrapper {
+        height: 85px;
+        width: 54px;
+    }
+    .card-bug,
+    .card-back,
+    .card-gameover {
+        background-size: contain;
+        height: 85px;
+        width: 54px;
+    }
+    .six-card-game,
+    .ten-card-game {
+        padding-top: 35%;
+        padding-bottom: 35%;
     }
 }
 

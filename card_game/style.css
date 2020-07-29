@@ -127,6 +127,7 @@
     position: relative;
     transform-style: preserve-3d;
     transition: transform 0.8s;
+    margin: 5px 5px 5px 5px;
 }
 
 .card-wrapper_hover:hover {
@@ -170,35 +171,30 @@
 
 .three-card-game {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    width: 702px;
-    height: 706px;
+    height: 100%;
     margin: auto;
     perspective: 1000px;
 }
 
 .six-card-game {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    align-content: space-around;
     flex-wrap: wrap;
-    width: 702px;
-    height: 750px;
+    height: 100%;
     margin: auto;
     perspective: 1000px;
 }
 
 .ten-card-game {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /*align-content: space-around;*/
+    display: inline-flex;
+    justify-content: center;
+    align-content: space-around;
     flex-wrap: wrap;
-    height: 702px;
-    width: 1186px;
+    height: 100%;
     margin: auto;
     perspective: 1000px;
 }

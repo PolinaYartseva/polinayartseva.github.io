@@ -1,0 +1,262 @@
+@media (max-width: 1440px) {
+    .description__title {
+        font-size: 50px;
+        line-height: 67px;
+    }
+    .description__subtitle {
+        font-size: 19px;
+        line-height: 22px
+    }
+    .main__levels,
+     .description__title,
+     .description__subtitle {
+         padding-left: 80px;
+    }
+    .level-input {
+        font-size: 45px;
+        line-height: 50px;
+    }
+    .start-button {
+        width: 300px;
+        height: 70px;
+        font-size: 28px;
+        line-height: 32px;
+    }
+    .main__image1,
+    .main__image2 {
+        height: 100%;
+    }
+}
+
+@media (max-width: 1250px) {
+    .description__title {
+        font-size: 45px;
+        line-height: 55px;
+    }
+    .description__subtitle {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .main__levels,
+    .description__title,
+    .description__subtitle {
+        padding-left: 60px;
+    }
+    .level-input {
+        font-size: 40px;
+        line-height: 45px;
+    }
+    .start-button {
+        width: 300px;
+        height: 70px;
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .main__image1,
+    .main__image2 {
+        height: 100%;
+        padding-top: 25%;
+    }
+    .six-card-game,
+    .ten-card-game {
+        margin: 0 auto;
+        width: 100%;
+        justify-content: center;
+        padding-left: 5%;
+        padding-right: 5%;
+        height: 100%;
+    }
+}
+
+@media (max-width: 1040px) {
+    .container {
+        background-size: auto;
+    }
+    .main {
+        align-items: center;
+        height: 100vh;
+    }
+    .main__levels,
+    .main__description {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .main__levels,
+    .description__subtitle {
+        padding-left: 0;
+    }
+    .main__image {
+        display: none;
+    }
+    .level {
+        text-align: center;
+    }
+    .level-input {
+        text-align: center;
+        padding-left: 0;
+    }
+    .description__title,
+    .description__subtitle {
+        text-align: center;
+        padding-top: 8px;
+        padding-left: 0;
+    }
+    .level:visited::before,
+    .level:hover::before,
+    .level:active::before,
+    .level_active:before {
+        width: 12px;
+        height: 12px;
+        top: 25%;
+        left: 27%;
+    }
+    .card-wrapper {
+        height: 227px;
+        width: 145px;
+    }
+    .card-bug,
+    .card-back,
+    .card-gameover {
+        background-size: contain;
+        height: 227px;
+        width: 145px;
+    }
+}
+
+@media (max-width: 880px) {
+    .level:visited::before,
+    .level:hover::before,
+    .level:active::before,
+    .level_active:before {
+        top: 25%;
+        left: 25%;
+    }
+}
+
+@media (max-width: 800px) {
+    .level:visited::before,
+    .level:hover::before,
+    .level:active::before,
+    .level_active:before {
+        top: 25%;
+        left: 20%;
+    }
+}
+
+@media (max-width: 730px) {
+    .main__levels,
+    .description__title,
+    .description__subtitle {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .description__title {
+        font-size: 35px;
+        line-height: 45px;
+    }
+    .description__subtitle {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .level-input {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .level:visited::before,
+    .level:hover::before,
+    .level:active::before,
+    .level_active:before {
+        width: 12px;
+        height: 12px;
+        left: 18%;
+    }
+    .card-wrapper {
+        height: 170px;
+        width: 109px;
+    }
+    .card-bug,
+    .card-back,
+    .card-gameover {
+        background-size: contain;
+        height: 170px;
+        width: 109px;
+    }
+    .six-card-game,
+    .ten-card-game {
+        padding-top: 25%;
+        padding-bottom: 25%;
+    }
+}
+
+@media (max-width: 600px) {
+    .level:visited::before,
+    .level:hover::before,
+    .level:active::before,
+    .level_active:before {
+        left: 15%;
+    }
+}
+
+@media (max-width: 530px) {
+    .level:visited::before,
+    .level:hover::before,
+    .level:active::before,
+    .level_active:before {
+        left: 10%;
+    }
+    .card-wrapper {
+        height: 85px;
+        width: 54px;
+    }
+    .card-bug,
+    .card-back,
+    .card-gameover {
+        background-size: contain;
+        height: 85px;
+        width: 54px;
+    }
+    .six-card-game,
+    .ten-card-game {
+        padding-top: 35%;
+        padding-bottom: 35%;
+    }
+}
+
+@media (max-width: 480px) {
+    .level:visited::before,
+    .level:hover::before,
+    .level:active::before,
+    .level_active:before {
+        left: 5%;
+    }
+}
+
+@media (max-width: 420px) {
+    .description__title {
+        font-size: 35px;
+        line-height: 40px;
+    }
+    .description__subtitle {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .level-input {
+        font-size: 30px;
+        line-height: 40px;
+        padding-bottom: 15px;
+    }
+    .start-button {
+        width: 200px;
+        height: 60px;
+        font-size: 25px;
+        line-height: 30px;
+        margin-top: 25px;
+    }
+    .level:visited::before,
+    .level:hover::before,
+    .level:active::before,
+    .level_active:before {
+        left: -5%;
+    }
+}

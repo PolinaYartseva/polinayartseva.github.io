@@ -1,0 +1,12 @@
+a {
+  color: #fff;
+  font-style: 25px; }
+  a:hover {
+    background: #454545;
+    height: 50px;
+    display: block; }
+
+p {
+  font-style: italic; }
+
+/*# sourceMappingURL=main.css.map */

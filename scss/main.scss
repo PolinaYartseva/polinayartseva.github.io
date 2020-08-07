@@ -1,0 +1,13 @@
+a {
+  color: #fff;
+  font-style: 25px;
+  &:hover{
+    background: #454545;
+    height: 50px;
+    display: block;
+  }
+}
+
+p {
+  font-style: italic bold;
+}

@@ -41,7 +41,6 @@ gulp.task('watch', function() {
             console.log('File ' + event.path + ' was ' + event.type + ', running tasks...');
             gulp.run('images');
         });
-
     });
 
 });

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <title>Polina Yartseva | Portfolio</title>
+ <link href="/css/style.css" rel="stylesheet" >
+</head>
+<body class="wrap">
+ <header class="header">
+   <nav class="menu">
+    <a class="menu__link">home</a>
+    <a class="menu__link">about</a>
+    <a class="menu__link">skills</a>
+    <a class="menu__link">portfolio</a>
+    <a class="menu__link">contacts</a>
+   </nav>
+ </header>
+ <section class="photo">
+  <h1 class="title">polina yartseva</h1>
+ </section>
+ <section class="about">
+  <h2 class="subtitle">about me</h2>
+  <p class="text">Hi, I'm Polina – Frontend developer, Graphic and Web designer.</p>
+  <p class="text">I'm a very passionate person about coding and web industry in general. I'm proactive and organized person, with a high sense of responsibility, self-motivated and committed to the success.</p>
+  <p class="text"> Ready to implement excellent projects with wonderful people.</p>
+ </section>
+ <section class="skills">
+  <h2 class="subtitle">skills</h2>
+  <div class="skills__grid">
+   <div class="grid__icon">
+    <p>React JS</p>
+   </div>
+   <div class="grid__icon">
+    <p>JavaScript</p>
+   </div>
+   <div class="grid__icon">
+    <p>GIT</p>
+   </div>
+   <div class="grid__icon">
+    <p>GULP</p>
+   </div>
+   <div class="grid__icon">
+    <p>SASS</p>
+   </div>
+   <div class="grid__icon">
+    <p>CSS3</p>
+   </div>
+   <div class="grid__icon">
+    <p>HTML5</p>
+   </div>
+   <div class="grid__icon">
+    <p>Figma</p>
+   </div>
+   <div class="grid__icon">
+    <p>Adobe Photoshop</p>
+   </div>
+   <div class="grid__icon">
+    <p>Adobe Illustrator</p>
+   </div>
+   <div class="grid__icon">
+    <p>Adobe After Effects</p>
+   </div>
+   <div class="grid__icon">
+    <p>Adobe Premiere Pro</p>
+   </div>
+  </div>
+ </section>
+ <section class="portfolio">
+  <h2 class="subtitle">portfolio</h2>
+  <h3 class="h3_title">Frontend Development</h3>
+  <div class="portfolio__item">
+   <img class="portfolio__item_photo">
+   <p class="text link">ToDo application created using ReactJS</p>
+  </div>
+  <div class="portfolio__item">
+   <img class="portfolio__item_photo">
+   <p class="text link">Card game “Find a bug” created using native JavaScript</p>
+  </div>
+  <div class="portfolio__item">
+   <img class="portfolio__item_photo">
+   <p class="text link">Responsive landing page “Axion”, HTML + CSS</p>
+  </div>
+  <div class="portfolio__item">
+   <img class="portfolio__item_photo">
+   <p class="text link">Responsive landing page “Ghostbusters”, HTML + CSS</p>
+  </div>
+  <!-- <h3 class="h3_title">Web Design</h3>-->
+ </section>
+ <section class="contacts">
+  <h2 class="subtitle">contacts</h2>
+  <div class="contacts__grid">
+   <div class="grid__icon"></div>
+   <div class="grid__icon"></div>
+   <div class="grid__icon"></div>
+   <div class="grid__icon"></div>
+   <div class="grid__icon"></div>
+  </div>
+ </section>
+<script>
+ function sum (source) {
+     let result=0;
+
+     for (let i=0; i<source.length; i++) {
+         result += source[i];
+     }
+     return result;
+ }
+
+ let array = [1, 2, 3];
+ let result = sum(array);
+ console.log(result);
+
+ function filter (source, greaterThan) {
+     let result = [];
+
+     for (let i=0; i<source.length; i++) {
+         if (source[i]>greaterThan){
+             result.push(source[i]);
+         }
+     }
+     return  result;
+ }
+
+ let array2 = [1, 2, 3, 4, 5, 6, 7, 8]
+ let res = filter(array2, 5);
+ console.log(res);
+</script>
+</body>
+</html>

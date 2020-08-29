@@ -1,0 +1,15 @@
+.wrap {
+  width: 65%; }
+
+.menu {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); }
+
+.skills__grid {
+  padding-top: 40px;
+  display: grid;
+  width: 100%;
+  max-width: 750px;
+  margin: 0 auto;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px; }

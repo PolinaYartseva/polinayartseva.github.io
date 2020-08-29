@@ -1,0 +1,23 @@
+{
+  "name": "polinayartseva.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PolinaYartseva/polinayartseva.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PolinaYartseva/polinayartseva.github.io/issues"
+  },
+  "homepage": "https://github.com/PolinaYartseva/polinayartseva.github.io#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0"
+  }
+}

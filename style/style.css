@@ -78,7 +78,6 @@
   font-weight: bold;
   text-transform: uppercase;
   color: #1D4E89;
-  /*border-bottom: solid 3px #1D4E89;*/
   padding-bottom: 25px;
 }
 
@@ -122,6 +121,7 @@
   text-align: center;
   color: #000;
   margin-bottom: 10px;
+  line-height: 1.5;
 }
 
 .main__button {
@@ -202,7 +202,7 @@
   justify-content: center;
   align-items: center;
   padding-top: 40px;
-  padding-bottom: 60px;
+  padding-bottom: 40px;
 }
 
 .contacts__socials {
@@ -211,7 +211,7 @@
   justify-content: center;
   align-items: center;
   padding-top: 25px;
-  padding-bottom: 55px;
+  padding-bottom: 10px;
 }
 
 .socials__row {
@@ -242,9 +242,31 @@
   color: #000;
 }
 
+.footer {
+  padding-bottom: 35px;
+  padding-top: 45px;
+  background-color: #000;
+}
+
+.footer__text {
+  font-size: 14px;
+  font-weight: normal;
+  text-align: center;
+  color: #fff;
+  line-height: 1.5;
+}
+
 @media (max-width: 1024px) {
   .header__title {
-    font-size: 40px;
+    font-size: 35px;
+    top: 25px;
+    left: 40px;
+  }
+  .header__subtitle {
+    width: 40%;
+    top: 150px;
+    left: 40px;
+    font-size: 25px;
   }
   .about__text {
     width: 65%;
@@ -277,7 +299,7 @@
     justify-content: flex-end;
     padding: 0 16px;
     top: 0;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.75);
     left: 0;
     right: 0;
     height: 50px;
@@ -296,7 +318,7 @@
   .mobile-menu__icon {
     display: block;
     position: relative;
-    background: #000;
+    background: #fff;
     width: 90%;
     height: 4px;
     transition: 0.4s;
@@ -305,7 +327,7 @@
     content: "";
     display: block;
     position: absolute;
-    background: #000;
+    background: #fff;
     width: 100%;
     height: 4px;
     transition: 0.4s;
@@ -389,8 +411,14 @@
   }
   .header__title {
     top: 20px;
-    left: 40px;
+    left: 35px;
     font-size: 30px;
+  }
+  .header__subtitle {
+    width: 40%;
+    top: 110px;
+    left: 35px;
+    font-size: 20px;
   }
   .header__menu {
     display: none;
@@ -414,6 +442,9 @@
   }
   .text {
     font-size: 16px;
+  }
+  .text-tight {
+    font-size: 14px;
   }
   .skills {
     padding-top: 47px;
@@ -447,6 +478,13 @@
     left: 20px;
     font-size: 30px;
   }
+  .header__subtitle {
+    width: 40%;
+    top: 100px;
+    left: 20px;
+    font-size: 18px;
+    padding-top: 15px;
+  }
   .image {
     vertical-align: middle;
   }
@@ -464,6 +502,9 @@
   }
   .text {
     font-size: 14px;
+  }
+  .text-tight {
+    font-size: 12px;
   }
   .skills {
     padding-top: 37px;
@@ -497,7 +538,30 @@
     left: 15px;
     font-size: 20px;
   }
+  .header__subtitle {
+    width: 45%;
+    top: 70px;
+    left: 15px;
+    font-size: 16px;
+    padding-top: 10px;
+  }
   .text {
-    font-size: 12px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 320px) {
+  .header__title {
+    top: 10px;
+    left: 10px;
+    font-size: 20px;
+  }
+
+  .header__subtitle {
+    width: 45%;
+    top: 60px;
+    left: 10px;
+    font-size: 14px;
+    padding-top: 10px;
   }
 }
